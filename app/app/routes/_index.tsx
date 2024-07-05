@@ -1,18 +1,10 @@
-import type { MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
-import { Button } from "~/components/ui/button";
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: "Kontakto" },
-    { name: "description", content: "Welcome to Kontakto!" },
-  ];
-};
-
 export default function Index() {
-  return (
-    <>
-      <Button>Hello</Button>
-    </>
-  );
+    return (
+        <div className="flex h-[calc(100vh-5rem)] items-center justify-center">
+            <p className="text-5xl font-bold underline">
+                Kontakto
+                <br />
+            </p>
+        </div>
+    )
 }
